@@ -1,5 +1,6 @@
 // question 1 = Palindrome number
 // An integer is a palindrome when it reads the same backward as forward.
+//discuss => https://leetcode.com/problems/palindrome-number/solutions/
 
 // Input: x = 121
 // Output: true

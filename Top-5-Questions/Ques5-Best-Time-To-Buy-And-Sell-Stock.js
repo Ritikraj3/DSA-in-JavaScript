@@ -14,6 +14,8 @@
 //Output: 0
 //Explanation: In this case, no transactions are done and the max profit = 0.
 
+//discuss => https://leetcode.com/problems/best-time-to-buy-and-sell-stock/solutions/
+
 //* Brute Force Solution
 const maxProfit = function (prices) {
     let globalProfit = 0;

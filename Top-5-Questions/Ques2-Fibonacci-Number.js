@@ -3,6 +3,7 @@
 // What is Fibonacci Number?
 // => A series of numbers in which each number is the sum of the two preceding numbers.
 
+//discuss => https://leetcode.com/problems/fibonacci-number/solutions/
 
 //F(0) = 0, F(1) = 1
 // F(n) = F(n-1) + F(n-2), for n > 1
