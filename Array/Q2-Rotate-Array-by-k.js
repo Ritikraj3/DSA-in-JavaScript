@@ -9,16 +9,40 @@
 
 //* 1st Approach
 
- function rotation (nums, k) {
-    let size = nums.length;
+function rotation(nums, k) {
+  let size = nums.length;
 
-    if (k > size) k = k % size;
+  if (k > size) k = k % size;
 
-    const rotated = nums.splice(size - k, k);
+  const rotated = nums.splice(size - k, k);
 
-    nums.unshift(...rotated); 
+  nums.unshift(...rotated);
 
-    console.log(nums)
- }
+  console.log(nums);
+}
 
-rotation([1,2,3,4,5,6,7], 3)
+rotation([1, 2, 3, 4, 5, 6, 7], 3);
+
+//*optimized solution
+
+function optimizedRotation(nums, k) {
+  let size = nums.length;
+
+  if (k > size) k = k % size;
+
+  reverse(nums, 0, size - 1);
+  reverse(nums, 0, k - 1);
+  reverse(nums, k, size - 1);
+
+  return nums;
+}
+
+function reverse(nums, left, right) {
+  while (left < right) {
+    const temp = nums[left];
+    nums[left++] = nums[right];
+    nums[right--] = temp;
+  }
+}
+
+console.log(optimizedRotation([-1, -100, 3, 99], 2));

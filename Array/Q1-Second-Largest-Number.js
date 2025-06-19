@@ -37,4 +37,4 @@ const secondLargest2 = (arr) => {
   return secondLargest;
 };
 
-console.log (secondLargest2([12, 35, 1, 0, 23 34, 1]));
+console.log(secondLargest2([12, 35, 1, 0, 23, 34, 1]));
